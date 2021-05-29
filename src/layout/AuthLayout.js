@@ -43,7 +43,7 @@ const AuthLayout = ({ children, backLink, signInView }) => {
           <div
             style={{
               width: "80%",
-              maxWidth: "320px",
+              maxWidth: "375px",
               margin: "auto",
             }}
           >

@@ -38,8 +38,7 @@ const SignUp = () => {
         />
         <Button
           onClick={() => {
-            console.log("Hey");
-            history.push("/ee");
+            history.push("/dashboard");
           }}
           variant="contained"
           size="large"
