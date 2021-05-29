@@ -5,12 +5,12 @@ const SignUp = () => {
   const history = useHistory();
   return (
     <>
-      <Typography variant="h5">Create your Account</Typography>
+      <Typography variant="h5">Welcome Back To Prospa</Typography>
       <Typography
         style={{ marginBottom: "2rem", color: "#8397AB" }}
         component="p"
       >
-        A short description about account types
+        An account, with powerful, personalised tools all in one place
       </Typography>
       <form
         style={{
@@ -18,27 +18,12 @@ const SignUp = () => {
           flexDirection: "column",
           alignItems: "stretch",
         }}
-        action=""
       >
         <TextField
           style={{ marginBottom: "1.5rem" }}
           color="secondary"
-          label="First Name"
-          variant="filled"
-          size="small"
-        />
-        <TextField
-          style={{ marginBottom: "1.5rem" }}
-          color="secondary"
-          label="Last Name"
-          variant="filled"
-          size="small"
-        />
-        <TextField
-          style={{ marginBottom: "1.5rem" }}
-          color="secondary"
-          label="Mobile Number"
-          type="tel"
+          label="Email Address"
+          type="email"
           variant="filled"
           size="small"
         />
@@ -46,8 +31,8 @@ const SignUp = () => {
         <TextField
           style={{ marginBottom: "1.5rem" }}
           color="secondary"
-          label="Email Address"
-          type="email"
+          label="Enter Password"
+          type="password"
           variant="filled"
           size="small"
         />

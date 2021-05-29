@@ -1,8 +1,10 @@
 import { Grid, Link } from "@material-ui/core";
+import { useHistory } from "react-router";
 import BackButton from "../components/BackButton";
 import SideBar from "../components/SideBar";
 
 const AuthLayout = ({ children, backLink, signInView }) => {
+  const history = useHistory();
   return (
     <Grid container>
       <SideBar />
@@ -27,11 +29,15 @@ const AuthLayout = ({ children, backLink, signInView }) => {
             alignItems: "center",
           }}
         >
-          {backLink && <BackButton onClick={() => alert(backLink)} />}
+          {backLink && <BackButton onClick={() => history.push(backLink)} />}
           <div style={{ marginLeft: "auto", marginRight: ".5rem" }}>
             {signInView ? "Don't have an account?" : "Already a member?"}
           </div>
-          {signInView ? <Link>Sign Up</Link> : <Link>Sign In</Link>}
+          {signInView ? (
+            <Link onClick={() => history.push("/signup")}>Sign Up</Link>
+          ) : (
+            <Link onClick={() => history.push("/signin")}>Sign In</Link>
+          )}
         </div>
         <Grid container direction="column" alignItems="center">
           <div
