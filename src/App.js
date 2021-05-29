@@ -4,6 +4,7 @@ import AuthLayout from "./layout/AuthLayout";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import BusAcc from "./pages/BusAcc";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <AuthLayout signInView children={<SignIn />} />
       </Route>
       <Route exact path="/dashboard">
-        <AuthLayout children={<SignIn />} />
+        <Dashboard />
       </Route>
       <Route>
         <Redirect to="/signup" />
