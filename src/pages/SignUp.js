@@ -3,7 +3,6 @@ import { Button, TextField, Typography } from "@material-ui/core";
 const SignUp = () => {
   return (
     <>
-      {" "}
       <Typography variant="h5">Create your Account</Typography>
       <Typography
         style={{ marginBottom: "2rem", color: "#8397AB" }}
